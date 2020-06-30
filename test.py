@@ -22,3 +22,5 @@ def test_n_Positivo():
 
     assert response.status_code == 200
     assert data['n'] == 2
+
+    
