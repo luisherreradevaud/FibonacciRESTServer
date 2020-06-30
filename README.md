@@ -6,7 +6,7 @@ Para empezar el servicio:
 >python3 service.py
 
 El formato para consulta http es:
-http://<server_url>:5000/phi/n
+http://<server_url>:5001/phi/n
 Reemplazando n por el indice que se desea calcular.
 
 Dependecias:
