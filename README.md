@@ -4,6 +4,7 @@ Se entrega un entero positivo <n> vía consulta http GET, retornando el número 
 
 El formato para consulta http es:
 http://<server_url>:5000/phi/n
+Reemplazando n por el indice que se desea calcular.
 
 Dependecias:
 - flask
