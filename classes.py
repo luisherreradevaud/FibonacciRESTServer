@@ -15,9 +15,32 @@ class Phi(Resource):
 
         return suma
 
+    def calculaSuma(self,n):
+        suma = 0
+        n_int = int(n) + 1
+
+        for n in range(0,n_int):
+            suma = suma + n
+
+        return suma
+
+    def calculaMult(self,n):
+        mult = 1
+        n_int = int(n) + 1
+
+        for n in range(2,n_int):
+            mult = mult + n * n
+
+        return mult
+
+
     def get(self,n):
         if(n.isnumeric()):
-            respuesta = self.calculaPhi(n)
+            respuestaPhi = self.calculaPhi(n)
+            respuestaSuma = self.calculaSuma(n)
+            respuestaMult = self.calculaMult(n)
         else:
-            respuesta = 'Solo enteros positivos.'
-        return {'n': respuesta}
+            respuestaPhi = 'Solo enteros positivos.'
+            respuestaSuma = 'Solo enteros positivos.'
+            respuestaMult = 'Solo enteros positivos.'
+        return {'respuestaPhi': respuestaPhi, 'respuestaSuma': respuestaSuma , 'respuestaMult': respuestaMult}
